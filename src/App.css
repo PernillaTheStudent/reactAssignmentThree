@@ -1,12 +1,13 @@
 #root {
   font-family: "ptsans", "PT Sans", sans-serif;
+  height: 100%;
 
   --accent-turquoise: #3DFFF2;
   --accent-cerise: #FF48FF;
 }
 
 html {
-  height: 100vh;
+  /* height: 100vh; */
   box-sizing: border-box;
   font-size: 10px;
   line-height: 1.5;
@@ -102,7 +103,6 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
 }
 
 .topMenu {
@@ -198,8 +198,6 @@ main {
   flex-direction: row;
   flex-grow: 1;
   padding: 45px 45px 0;
-  /* min-height: 200px; */
-  height: 100%;
 }
 
 aside {
