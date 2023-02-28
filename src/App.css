@@ -1,0 +1,327 @@
+#root {
+  font-family: "ptsans", "PT Sans", sans-serif;
+
+  --accent-turquoise: #3DFFF2;
+  --accent-cerise: #FF48FF;
+}
+
+html {
+  height: 100vh;
+  box-sizing: border-box;
+  font-size: 10px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 10px;
+  background: linear-gradient(322deg, #22274E, #222D64);
+  color: rgba(255, 255, 255, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+  color: rgba(255, 255, 255, 0.4);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "ptsans-bold", "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+h1 {
+  font-family: "ptsans", "PT Sans", sans-serif;
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0 0 2rem;
+}
+h2 {
+  font-family: "ptsans", "PT Sans", sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0 0 1.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  padding: 0 0 0.6rem;
+}
+
+p {
+  font-family: "ptsans", "PT Sans", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.topMenu {
+  display: flex;
+  background-color: #30376A;
+  height: 100px;
+  flex-grow: 1;
+  align-items: center;
+  padding: 0 45px;
+  justify-content: space-between;
+}
+
+.userSection {
+  display: flex;
+}
+
+.userInfo {
+  display: flex;
+  padding-left: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infoSection {
+  display: flex;
+}
+
+.timeSection {
+  display: flex;
+  flex-direction: column;
+  padding-right: 78px;
+}
+
+.searchBar {
+  width: 50px;
+  height: 50px;
+  background: url("./assets/img/search.png") no-repeat;
+  background-size: 50px 50px;
+  margin-right: 15px;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.searchBar:hover {
+  background: url("./assets/img/search-hover.png") no-repeat;
+}
+
+.messages {
+  width: 50px;
+  height: 50px;
+  background: url("./assets/img/message.png") no-repeat;
+  margin-right: 15px;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.messages:hover {
+  background: url("./assets/img/message-hover.png") no-repeat;
+}
+
+.notifications {
+  width: 50px;
+  height: 50px;
+  background: url("assets/img/notification.png") no-repeat;
+  position: relative;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.notifications:hover {
+  background: url("assets/img/notification-hover.png") no-repeat;
+}
+
+.notificationsNumber {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  font-family: "ptsans-bold", "PT Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 25px;
+  height: 25px;
+  background-color: #32D679;
+  border-radius: 50%;
+  top: -8px;
+  right: -6px;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding: 45px 45px 0;
+  /* min-height: 200px; */
+  height: 100%;
+}
+
+aside {
+  /* min-width: 590px; */
+  display: flex;
+  flex: 1 0 44%;
+  flex-direction: column;
+  padding-right: 16px;
+}
+
+.content {
+  /* min-width: 745px; */
+  display: flex;
+  flex: 0 0 56%;
+  padding-left: 16px;
+}
+.content .wrapper {
+  display: flex;
+  flex-grow: 1;
+  background-color: rgba(0, 0, 0, 0.08);
+  padding: 22px 32px;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+label {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+}
+.inputText {
+  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #2D3359;
+  border: none;
+  color: #fff;
+  width: 100%;
+  padding: 26px;
+  margin: 16px 0;
+  border-radius: 4px;
+  font-size: 1.7rem;
+}
+
+button.calculate {
+  border-radius: 42px;
+  padding: 16px;
+  text-align: center;
+  background: linear-gradient(#4F64D9, #1427A7);
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  width: 230px;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+button.calculate span {
+  filter: drop-shadow(0px 3px 5px #000F72);
+}
+button.calculate:hover {
+  background-color: #8E91F4;
+}
+.calculate:hover span {
+  filter: none;
+} 
+
+aside .wrapper {
+  display: flex;
+  flex-grow: 1;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  flex-direction: column;
+}
+.chart {
+  display: flex;
+  justify-content: center;
+}
+aside .wrapper-social {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.twitter, .facebook {
+  display: flex;
+  flex-grow: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 18px 30px 30px;
+  flex-direction: column;
+}
+.twitter {
+  min-width: 220px;
+  flex: 0 0 47%;
+}
+.facebook {
+  min-width: 220px;
+  flex: 0 0 47%;
+}
+.socialLogo {
+  display:flex;
+  margin-top: 27px;
+  background-color: rgba(255,255,255, 0.05);
+  padding: 12px 30px;
+  margin: 26px -30px;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.socialLogo:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.activity {
+  margin-left: 26px;
+}
+.result {
+  margin: 33px -33px;
+  padding: 33px 27px 27px;
+  border-top: 1px solid rgba(255,255,255, 0.4);
+  border-bottom: 1px solid rgba(255,255,255, 0.4);
+}
+.result p {
+  margin-bottom: 2rem;
+}
