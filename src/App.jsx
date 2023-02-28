@@ -136,7 +136,7 @@ function App() {
           </aside>
           <section className="content">
             <div className="wrapper">
-              <h1>Assignment <span style={{ color: "var(--accent-cerise)" }}>04</span></h1>
+              <h1>Assignment <span style={{ color: "var(--accent-cerise)" }}>03</span></h1>
               <h4>Calculate number of words and letters</h4>
               <p>Ignores empty spaces.</p>
               <form onSubmit={submitHandler}>
