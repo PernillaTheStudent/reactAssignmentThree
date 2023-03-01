@@ -1,6 +1,7 @@
 #root {
   font-family: "ptsans", "PT Sans", sans-serif;
   height: 100%;
+  background: linear-gradient(322deg, #22274E, #222D64);
 
   --accent-turquoise: #3DFFF2;
   --accent-cerise: #FF48FF;
@@ -23,7 +24,7 @@ body {
   height: 100%;
   margin: 0;
   font-size: 10px;
-  background: linear-gradient(322deg, #22274E, #222D64);
+  background: #212854;
   color: rgba(255, 255, 255, 1);
 }
 
