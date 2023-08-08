@@ -160,7 +160,7 @@ function App() {
                   <span>Calculate</span>
                 </button>
               </form>
-              {amount.words > 0 ? (
+              {/* {amount.words > 0 ? ( */}
                 <>
                   <div className="result">
                     <p>Number of words in phrase:
@@ -175,10 +175,10 @@ function App() {
                     </p>
                   </div>
                 </>
-              ) : (
+              {/* ) : (
                 <>
                 </>
-              )}
+              )} */}
             </div>
           </section>
         </main>
