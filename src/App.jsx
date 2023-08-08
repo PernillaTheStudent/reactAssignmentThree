@@ -15,6 +15,7 @@ function App() {
   const [amount, setAmount] = useState({ words: 0, letters: 0 });
   const [minutes, setMinutes] = useState("00.00");
   const [isTimeOn, setIsTimeOn] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
   useInterval(() => {
     let minuteNow = format(new Date(), "HH.mm");
@@ -48,6 +49,7 @@ function App() {
     console.log("click query:", query)
     const result = calculateLetters(query);
     setAmount((prev) => ({ ...prev, words: result.words, letters: result.letters }));
+    setIsClicked(true);
     // console.log(result)  // this update
     // console.log(amount)  // previous update
   }
@@ -160,7 +162,7 @@ function App() {
                   <span>Calculate</span>
                 </button>
               </form>
-              {/* {amount.words > 0 ? ( */}
+              {isClicked ? (
                 <>
                   <div className="result">
                     <p>Number of words in phrase:
@@ -175,10 +177,10 @@ function App() {
                     </p>
                   </div>
                 </>
-              {/* ) : (
+               ) : (
                 <>
                 </>
-              )} */}
+              )}
             </div>
           </section>
         </main>
