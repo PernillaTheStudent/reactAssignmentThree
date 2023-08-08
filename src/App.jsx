@@ -47,9 +47,9 @@ function App() {
     console.log("click");
     console.log("click query:", query)
     const result = calculateLetters(query);
-    setAmount({ words: result.words, letters: result.letters })
-    console.log(result)
-    // console.log(amount)
+    setAmount((prev) => ({...prev, words: result.words, letters: result.letters}));
+    // console.log(result)  // this update
+    // console.log(amount)  // previous update
   }
 
   const keyPressed = ({ key }) => {
