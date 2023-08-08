@@ -47,7 +47,7 @@ function App() {
     console.log("click");
     console.log("click query:", query)
     const result = calculateLetters(query);
-    setAmount((prev) => ({...prev, words: result.words, letters: result.letters}));
+    setAmount((prev) => ({ ...prev, words: result.words, letters: result.letters }));
     // console.log(result)  // this update
     // console.log(amount)  // previous update
   }
@@ -182,6 +182,9 @@ function App() {
             </div>
           </section>
         </main>
+        <div className="footer">
+          <p>Credit: <a href="https://dribbble.com/shots/10894364-Free-UI-Presentation-file-XD-PSD?utm_source=Clipboard_Shot&utm_campaign=EmranXDr&utm_content=Free%20UI%20%26%20Presentation%20file%20(XD%2BPSD)&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=EmranXDr&utm_content=Free%20UI%20%26%20Presentation%20file%20(XD%2BPSD)&utm_medium=Social_Share" target="_blank">UI & Presentation Design</a></p>
+        </div>
 
       </div>
     </div >

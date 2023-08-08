@@ -91,7 +91,7 @@ h4 {
   padding: 0 0 0.6rem;
 }
 
-p {
+p, a {
   font-family: "ptsans", "PT Sans", sans-serif;
   font-size: 1.4rem;
   line-height: 1.9rem;
@@ -100,6 +100,16 @@ p {
   color: rgba(255, 255, 255, 0.4);
 }
 
+a, a:link, a:visited {
+  text-decoration: underline;
+}
+a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.footer p,
+.footer a {
+  font-size: 1.2rem;
+}
 .outerContainer {
   display: flex;
   flex-direction: column;
@@ -198,7 +208,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  padding: 45px 45px 0;
+  padding: 45px 45px 15px;
 }
 
 aside {
@@ -221,6 +231,9 @@ aside {
   background-color: rgba(0, 0, 0, 0.08);
   padding: 22px 32px;
   flex-direction: column;
+}
+.footer {
+  padding: 0 48px;
 }
 form {
   display: flex;
